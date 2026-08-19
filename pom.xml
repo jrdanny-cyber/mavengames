@@ -32,7 +32,7 @@
            <repositories>
              <repository>
                 <id>nexus</id>
-                <url>http://18.232.164.128:8081/danny/repository/byd/</url>
+                <url>http://13.217.105.31:8081/danny/repository/byd/</url>
              </repository>
            </repositories>
 
@@ -104,13 +104,13 @@
 	    <repository>
 	      <id>nexus</id>
 	      <name>Landmark Technologies Releases Nexus Repository</name>
-	      <url> http://18.232.164.128:8081/danny/repository/paypal-releases/</url>
+	      <url> http://13.217.105.31:8081/danny/repository/paypal-releases/</url>
 	    </repository>
 	    
 	    <snapshotRepository>
 	      <id>nexus</id>
 	      <name>Landmark Technologies Snapshot Nexus Repository </name>
-	      <url>http://18.232.164.128:8081/danny/repository/paypal-snapshots/</url>
+	      <url>http://13.217.105.31:8081/danny/repository/paypal-snapshots/</url>
 	    </snapshotRepository>
 	    
 	</distributionManagement>
