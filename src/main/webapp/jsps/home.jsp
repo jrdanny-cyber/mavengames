@@ -11,7 +11,7 @@
 <body>
 <h1 align="center">Welcome to Daniel Technologies.</h1>
 <h2 align="center"> .We are in the midst of great people. With continuous persistence
-                       and perserverence we shall have atleast 3 jobs before december.
+                       and perserverence we shall have atleast 4 jobs before december.
 	The shout of the King Jesus is in our midst. HE IS OUR SUCCESS ACCESS KEY</h2>
 <hr>
 <div style="text-align: center;">
