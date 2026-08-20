@@ -20,7 +20,7 @@
 	</span>
 	<span style="font-weight: bold;">
 		Daniel Technology, 
-		Bonaber, Douala, Cameroon
+		Bonaberi, Douala, Cameroon
 		+237 676245087,
 		jrdanny-cyber@gmail.com
 		<br>
