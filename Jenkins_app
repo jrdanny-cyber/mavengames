@@ -1,0 +1,31 @@
+node{
+    def mavenHome = tool name: '3.9.16'
+ stage('1.CodeClone'){
+    git credentialsId: 'jrdanny-cyber', url: 'https://github.com/jrdanny-cyber/mavengames'
+   }
+   stage('2MavenBuild'){
+   sh "${mavenHome}/bin/mvn clean package"
+ }
+ stage('3CodeQuality'){
+   sh "${mavenHome}/bin/mvn sonar:sonar"
+}
+stage('4DeploytoArtifactory'){
+   sh "${mavenHome}/bin/mvn deploy"
+}
+stage('4Uploadtotomcat'){
+   deploy adapters: [tomcat9(alternativeDeploymentContext: '', credentialsId: 'admin', path: '', url: 'http://32.195.54.15:8080/')], contextPath: null, war: 'target/*war'
+}
+stage('6Manualapproval'){
+    sh "echo 'ready for review' "
+    timeout(time:5, unit:'HOURS') {
+    input message: 'Application ready for deployment, Please review and approve'
+      }
+}
+stage('7EmailNotify'){
+    emailext body: '''Hello team, the java pipeline project is done
+Let the developers prepare code for CI/CD
+
+Good day
+Devops Daniel''', recipientProviders: [upstreamDevelopers(), contributor(), developers()], subject: 'pipeline build of java project', to: 'gamodaniel67@gmail.com'
+}
+}
