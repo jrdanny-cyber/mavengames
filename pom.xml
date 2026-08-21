@@ -7,7 +7,7 @@
 	<packaging>war</packaging>
 	<version>0.0.1-</version>
 	
-	<name>danniel-app</name>
+	<name>maven-web-application</name>
 
 	<description>Maven Web Project for Java Project</description>
 
@@ -116,7 +116,7 @@
 	</distributionManagement>
 	
 	<build>
-		<finalName>maven-web-app</finalName>
+		<finalName>Daniels-java-app</finalName>
 		
 		<plugins>
 			<plugin>
