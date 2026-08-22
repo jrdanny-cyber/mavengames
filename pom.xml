@@ -12,7 +12,7 @@
 	<description>Maven Web Project for Java Project</description>
 
 	<organization>
-		<name>Landmark Technologies</name>
+		<name>Daniel Technologies</name>
 		<url>http://landmarktechnologies.com/</url>
 	</organization>
 
@@ -21,7 +21,7 @@
 		<spring.version>5.1.2.RELEASE</spring.version>
 		<junit.version>4.11</junit.version>
 		<log4j.version>1.2.17</log4j.version>
-		<sonar.host.url>http://50.17.150.244:9000/</sonar.host.url>
+		<sonar.host.url>http://13.221.8.28:9000/</sonar.host.url>
 		<sonar.login>admin</sonar.login>
 		<sonar.token>squ_9e8fab48de2f0378042479c78d0f1aecfbd8f28c</sonar.token>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -32,7 +32,7 @@
            <repositories>
              <repository>
                 <id>nexus</id>
-                <url>http://3.81.201.40:8081/danny/repository/byd/</url>
+                <url>http:http://34.230.60.36:8081/danny/repository/danielsapp/</url>
              </repository>
            </repositories>
 
@@ -103,14 +103,14 @@
 	<distributionManagement>
 	    <repository>
 	      <id>nexus</id>
-	      <name>Landmark Technologies Releases Nexus Repository</name>
-	      <url> http://3.81.201.40:8081/danny/repository/maven-releases/</url>
+	      <name>Daniel Technologies Releases Nexus Repository</name>
+	      <url>http://34.230.60.36:8081/danny/repository/danielsapp-release/</url>
 	    </repository>
 	    
 	    <snapshotRepository>
 	      <id>nexus</id>
-	      <name>Landmark Technologies Snapshot Nexus Repository </name>
-	      <url>http://3.81.201.40:8081/danny/repository/maven-snapshots/</url>
+	      <name>Daniel Technologies Snapshot Nexus Repository </name>
+	      <url>http://34.230.60.36:8081/danny/repository/danielsapp/</url>
 	    </snapshotRepository>
 	    
 	</distributionManagement>
